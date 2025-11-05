@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // insert_books.js - Script to populate MongoDB with sample book data
 
 // Import MongoDB client
@@ -196,3 +197,20 @@ insertBooks().catch(console.error);
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
  */ 
+=======
+// insert_books.js
+use('plp_bookstore');
+
+db.books.insertMany([
+  { title: "Clean Code", author: "Robert C. Martin", genre: "Software Engineering", published_year: 2008, price: 45.99, in_stock: true, pages: 464, publisher: "Prentice Hall" },
+  { title: "The Pragmatic Programmer", author: "Andrew Hunt", genre: "Software Engineering", published_year: 1999, price: 39.99, in_stock: true, pages: 352, publisher: "Addison-Wesley" },
+  { title: "Design Patterns", author: "Erich Gamma", genre: "Software Design", published_year: 1994, price: 49.99, in_stock: false, pages: 395, publisher: "Addison-Wesley" },
+  { title: "Refactoring", author: "Martin Fowler", genre: "Software Engineering", published_year: 1999, price: 42.99, in_stock: true, pages: 431, publisher: "Addison-Wesley" },
+  { title: "You Don’t Know JS", author: "Kyle Simpson", genre: "JavaScript", published_year: 2015, price: 29.99, in_stock: true, pages: 278, publisher: "O’Reilly Media" },
+  { title: "Eloquent JavaScript", author: "Marijn Haverbeke", genre: "JavaScript", published_year: 2018, price: 34.99, in_stock: true, pages: 472, publisher: "No Starch Press" },
+  { title: "Python Crash Course", author: "Eric Matthes", genre: "Python", published_year: 2019, price: 37.99, in_stock: true, pages: 544, publisher: "No Starch Press" },
+  { title: "Fluent Python", author: "Luciano Ramalho", genre: "Python", published_year: 2015, price: 59.99, in_stock: false, pages: 792, publisher: "O’Reilly Media" },
+  { title: "Learning SQL", author: "Alan Beaulieu", genre: "Database", published_year: 2020, price: 29.99, in_stock: true, pages: 408, publisher: "O’Reilly Media" },
+  { title: "MongoDB: The Definitive Guide", author: "Kristina Chodorow", genre: "Database", published_year: 2013, price: 54.99, in_stock: true, pages: 432, publisher: "O’Reilly Media" }
+]);
+>>>>>>> 2bc85cd (MongoDB Fundamentals Week 1 – Final Submission)

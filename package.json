@@ -1,0 +1,14 @@
+{
+  "name": "mongodb_fundamentals_week1",
+  "version": "1.0.0",
+  "description": "MongoDB Fundamentals Week 1 Assignment - PLP",
+  "main": "queries_node.js",
+  "scripts": {
+    "start": "node queries_node.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.0.0"
+  },
+  "author": "Amohelang Ntjanyana",
+  "license": "ISC"
+}
